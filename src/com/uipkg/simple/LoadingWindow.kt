@@ -34,7 +34,7 @@ class LoadingWindow : JPanel {
         jf.isLocationByPlatform = true
         jf.layout = BorderLayout()
         if (isCenter) {
-            val screenSpace = ClientMachine.getClientScreenSpace()
+            val screenSpace = ClientMachine.clientScreenSpace
             jf.setLocation(screenSpace.width / 2 - 300, screenSpace.height / 2)
         }
         val jl = JLabel(text)
@@ -69,7 +69,7 @@ class LoadingWindow : JPanel {
         jf.isResizable = false
         jf.isLocationByPlatform = true
         jf.isUndecorated = true
-        val screenSpace = ClientMachine.getClientScreenSpace()
+        val screenSpace = ClientMachine.clientScreenSpace
         jf.setLocation(screenSpace.width / 2 - 300, screenSpace.height / 2 - 100)
         jf.layout = BorderLayout()
         val jl = JLabel("Loading...     ")

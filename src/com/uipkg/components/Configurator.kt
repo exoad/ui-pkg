@@ -40,6 +40,6 @@ class Configurator(width: Int, height: Int) {
 
     init {
         dimension = Dimension(width, height)
-        titleStr = ClientMachine.getClientName()
+        titleStr = ClientMachine.clientName
     }
 }
